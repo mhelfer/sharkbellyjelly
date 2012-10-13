@@ -1,0 +1,3 @@
+rvm use ruby-1.9.2@sharkbellyjelly --create
+#force utf-8 mode for reading files
+#export RUBYOPT=-Ku
