@@ -1,0 +1,37 @@
+<div class="center hero-unit">
+
+<h1>Contact Me</h1>
+
+<br/><br/>
+<%= form_for @message, :url => contact_path do |form| %>
+  
+  <div class="control-group">
+    <div class="controls">
+      <%= form.text_field :name, placeholder: "Name" %>
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <div class="controls">
+      <%= form.text_field :email, placeholder: "E-mail" %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <%= form.text_field :subject, placeholder: "Subject" %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <%= form.text_area :body, placeholder: "Body" %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <%= form.submit "Send", class: "btn" %>
+    </div>
+  </div>
+<% end %>
